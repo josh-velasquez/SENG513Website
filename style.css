@@ -81,7 +81,7 @@ nav a {
   width: 200px;
   padding: 20px;
   border-radius: 4px;
-  color: #05a8aa;
+  color: rgba(255, 255, 255, 0.781);
   display: block;
   font-weight: 700;
   margin: 40px auto;
@@ -132,7 +132,7 @@ ul.nutrition li {
 
 .contact-title {
   font-family: "Oswald", sans-serif;
-  color: white;
+  color: rgba(255, 255, 255, 0.781);
   font-size: medium;
 }
 
@@ -158,30 +158,35 @@ ul.nutrition li {
   color: red;
 }
 
-.build {
-  font-family: "Roboto", sans-serif;
-  flex-direction: row;
-  display: flex;
-  justify-content: space-evenly;
-  color: white;
-  margin: 20px auto;
-  padding: 20px;
-  width: 90%;
-  background-color: #2D3A56;
-}
-
-.build img {
-  height: 400px;
-  width: 400px;
-}
-
-.specs li {
-  text-align: left;
-  font-size: medium;
-}
-
 .break {
   width: 70%;
-  margin: 40px auto;
-  border-color: #dddcda;
+  margin: 20px auto;
+  border-color: rgba(255, 255, 255, 0.781);
+}
+
+.grid-info {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #2d3a56;
+  transition: 500ms;
+}
+
+.grid-info p {
+  font-size: small;
+}
+
+.grid-box {
+  height: 300px;
+  width: 300px;
+}
+
+.grid-box li {
+  text-align: left;
+  font-size: medium;
 }
