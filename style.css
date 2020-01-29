@@ -2,14 +2,12 @@ body {
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
-  background-color: #2D3A56;
+  background-color: #2d3a56;
 }
 
 a {
   text-decoration: none;
 }
-
-/* Navigation */
 
 nav {
   text-align: center;
@@ -35,10 +33,10 @@ nav a {
 
 .content {
   width: 100%;
-  height: 550px;
+  height: 450px;
   overflow: scroll;
   margin: 10px auto;
-  background-color: #4A738E;
+  background-color: #4a738e;
   scrollbar-color: red;
 }
 
@@ -161,11 +159,15 @@ ul.nutrition li {
 }
 
 .build {
+  font-family: "Roboto", sans-serif;
   flex-direction: row;
   display: flex;
   justify-content: space-evenly;
   color: white;
-  margin: 50px auto;
+  margin: 20px auto;
+  padding: 20px;
+  width: 90%;
+  background-color: #2D3A56;
 }
 
 .build img {
@@ -173,12 +175,13 @@ ul.nutrition li {
   width: 400px;
 }
 
-.specs li{
+.specs li {
   text-align: left;
+  font-size: medium;
 }
 
 .break {
   width: 70%;
   margin: 40px auto;
-  border-color: #DDDCDA;
+  border-color: #dddcda;
 }
