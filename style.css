@@ -39,6 +39,7 @@ nav a {
   overflow: scroll;
   margin: 10px auto;
   background-color: #4A738E;
+  scrollbar-color: red;
 }
 
 .header {
@@ -127,17 +128,29 @@ ul.nutrition li {
 .contact {
   display: flex;
   flex-flow: row;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.contact-title {
+  font-family: "Oswald", sans-serif;
+  color: white;
+  font-size: medium;
 }
 
 .icon {
-  height: 60px;
-  width: 60px;
+  height: 70px;
+  width: 70px;
+  transition: 500ms;
+  border-bottom: 2px solid transparent;
 }
 
+.icon:hover {
+  border-color: red;
+}
 
 .navbar a {
-  transition: 500ms;
+  transition: 400ms;
   border-bottom: 2px solid transparent;
   color: white;
 }
@@ -145,4 +158,27 @@ ul.nutrition li {
 .navbar :hover {
   border-color: red;
   color: red;
+}
+
+.build {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  margin: 50px auto;
+}
+
+.build img {
+  height: 400px;
+  width: 400px;
+}
+
+.specs li{
+  text-align: left;
+}
+
+.break {
+  width: 70%;
+  margin: 40px auto;
+  border-color: #DDDCDA;
 }
