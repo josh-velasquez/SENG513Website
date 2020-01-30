@@ -164,7 +164,7 @@ ul.nutrition li {
   border-color: rgba(255, 255, 255, 0.781);
 }
 
-.grid-info {
+.grid-container {
   display: inline-grid;
   grid-template-columns: auto auto;
   grid-gap: 10px;
@@ -177,7 +177,7 @@ ul.nutrition li {
   transition: 500ms;
 }
 
-.grid-info p {
+.grid-container p {
   font-size: small;
 }
 
@@ -191,10 +191,27 @@ ul.nutrition li {
   font-size: small;
 }
 
-table, th, td {
+th {
+  background-color: grey;
+  color: white;
+  border-color: red;
+  border: 2px solid black;
+}
+
+td {
   border: 1px solid black;
   border-collapse: collapse;
   padding: 15px;
+  width: 100%;
+  background-color: red;
+}
+
+.prices {
+  display: inline-flex;
+  width: 80%;
+  font-family: "Roboto", sans-serif;
+  font-size: medium;
+  text-align: left;
 }
 
 .nav-icon {
@@ -207,4 +224,8 @@ table, th, td {
 
 .nav-icon:hover {
   background-color: red;
+}
+
+.build {
+  display: inline-flex;
 }
